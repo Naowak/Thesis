@@ -1,0 +1,3 @@
+[submodule "code/mnemosyne-meetings"]
+	path = code/mnemosyne-meetings
+	url = https://gitlab.inria.fr/ntrouvai/mnemosyne-meetings.git
