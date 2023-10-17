@@ -1,4 +1,4 @@
-### Generalized Hopfield Networks: On a Model of Associative Memory with Huge Storage Capacity (2021)
+### Generalized Hopfield Networks: On a Model of Associative Memory with Huge Storage Capacity (2017)
 
 [Paper](https://arxiv.org/pdf/1702.01929.pdf)
 
