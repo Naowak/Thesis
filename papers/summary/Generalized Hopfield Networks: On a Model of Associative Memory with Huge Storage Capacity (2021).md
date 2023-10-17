@@ -20,7 +20,7 @@
 - L'interaction est donnée par une fonction $F(x)$ qui peut être polynomiale ou même exponentielle.
 - Le cas de $ F(x) = x^{2} $ réduit au modèle Hopfield standard.
 - La nouvelle dynamique de mise à jour est donnée par  
-$ T_{i}(\sigma) = sgn(\sum_{\mu=1}^{M} (F(1.\xi_{i}^{\mu} + \sum_{j!=i} \xi_{j}^{\mu} \sigma_{j} ) - F(-1.\xi_i^\mu + \sum_{i!=j} \xi_j^\mu \sigma_j))) $.
+$T_{i}(\sigma) = sgn(\sum_{\mu=1}^{M} (F(1.\xi_{i}^{\mu} + \sum_{j!=i} \xi_{j}^{\mu} \sigma_{j} ) - F(-1.\xi_i^\mu + \sum_{i!=j} \xi_j^\mu \sigma_j)))$.
 
 ### Principaux résultats :
 - Avec une interaction polynomiale, le modèle peut stocker jusqu'à $ M = \alpha_{n} N^{n-1} $ motifs si de petites erreurs dans la récupération sont tolérées.
