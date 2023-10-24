@@ -1,3 +1,6 @@
 [submodule "code/mnemosyne-meetings"]
 	path = code/mnemosyne-meetings
 	url = https://gitlab.inria.fr/ntrouvai/mnemosyne-meetings.git
+[submodule "docs_thesis"]
+	path = docs_thesis
+	url = git@github.com:Naowak/docs_thesis.git
