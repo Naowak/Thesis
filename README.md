@@ -11,5 +11,6 @@
 - [Generalized Hopfield Networks: On a Model of Associative Memory with Huge Storage Capacity (2021)](./papers/summary/Generalized%20Hopfield%20Networks:%20On%20a%20Model%20of%20Associative%20Memory%20with%20Huge%20Storage%20Capacity%20(2021).md)
 - [Reservoir Transformers (2021)](./papers/summary/Reservoir%20Transformers%20(2021).md)
 - [A Robust Model of gated Working Memory (2020)](./papers/summary/A%20Robust%20Model%20of%20gated%20Working%20Memory%20(2020).md)
+- [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks (2020)](./papers/summary/Retrieval-Augmented%20Generation%20for%20Knowledge-Intensive%20NLP%20Tasks%20(2021).md)
 
 
