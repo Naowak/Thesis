@@ -25,4 +25,4 @@ On peut noter que le reservoir a plus de difficulté a conserver sa mémoire int
 
 En résumé, le papier propose un modèle simple et robuste de mémoire de travail à accès contrôlé basé sur trois neurones. Ce modèle est capable de mémoriser des informations pendant une période prolongée et est robuste contre diverses perturbations. Il offre une alternative intéressante aux modèles de réservoir classiques utilisés pour la mémoire de travail.
 
-![Modèle minimal de 3 neurones](../schema/robust%20model%20of%20gated%20working%20memory.png)
+![Modèle minimal de 3 neurones](../schema/Minimal%20model%20for%20gated%20working%20memory.png)
