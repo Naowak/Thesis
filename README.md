@@ -8,9 +8,10 @@
 - [GRU : Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation (2014)](./papers/summary/GRU%20%3A%20Learning%20Phrase%20Representations%20using%20RNN%20Encoder%E2%80%93Decoder%20for%20Statistical%20Machine%20Translation%20%282014%29.md)
 - [Long Short Term Memory (1997)](./papers/summary/Long%20Short%20Term%20Memory%20%281997%29.md)
 - [RWKV : Reinventing RNNs for the Transformer Era (2023)](./papers/summary/RWKV%3A%20Reinventing%20RNNs%20for%20the%20Transformer%20Era%20%282023%29.md)
-- [Generalized Hopfield Networks: On a Model of Associative Memory with Huge Storage Capacity (2021)](./papers/summary/Generalized%20Hopfield%20Networks:%20On%20a%20Model%20of%20Associative%20Memory%20with%20Huge%20Storage%20Capacity%20(2021).md)
+- [Generalized Hopfield Networks: On a Model of Associative Memory with Huge Storage Capacity (2021)](./papers/summary/Generalized%20Hopfield%20Networks:%20On%20a%20Model%20of%20Associative%20Memory%20with%20Huge%20Storage%20Capacity%20(2017).md)
 - [Reservoir Transformers (2021)](./papers/summary/Reservoir%20Transformers%20(2021).md)
 - [A Robust Model of gated Working Memory (2020)](./papers/summary/A%20Robust%20Model%20of%20gated%20Working%20Memory%20(2020).md)
 - [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks (2020)](./papers/summary/Retrieval-Augmented%20Generation%20for%20Knowledge-Intensive%20NLP%20Tasks%20(2021).md)
+- [Curiosity-driven Exploration by Self-supervised Prediction (2017)](./papers/summary/Curiosity-driven%20Exploration%20by%20Self-supervised%20Prediction%20(2017).md)
 
 
