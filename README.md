@@ -9,3 +9,7 @@
 - [Long Short Term Memory (1997)](./papers/summary/Long%20Short%20Term%20Memory%20%281997%29.md)
 - [RWKV : Reinventing RNNs for the Transformer Era (2023)](./papers/summary/RWKV%3A%20Reinventing%20RNNs%20for%20the%20Transformer%20Era%20%282023%29.md)
 - [Generalized Hopfield Networks: On a Model of Associative Memory with Huge Storage Capacity (2021)](./papers/summary/Generalized%20Hopfield%20Networks:%20On%20a%20Model%20of%20Associative%20Memory%20with%20Huge%20Storage%20Capacity%20(2021).md)
+- [Reservoir Transformers (2021)](./papers/summary/Reservoir%20Transformers%20(2021).md)
+- [A Robust Model of gated Working Memory (2020)](./papers/summary/A%20Robust%20Model%20of%20gated%20Working%20Memory%20(2020).md)
+
+
