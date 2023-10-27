@@ -53,3 +53,7 @@ The study explores how the human brain processes and sequences speech sounds. Us
 - [Orca: Progressive Learning from Complex Explanation Traces of GPT-4 (2023)](./papers/summary/Orca%20Progressive%20Learning%20from%20Complex%20Explanation%20Traces%20of%20GPT-4%20(2023).md)
 
 This paper presents the development of Orca, a 13-billion parameter model, that improves upon smaller models by mimicking the reasoning processes of Large Foundation Models (LFMs) using detailed explanation data from GPT-4. By employing "explanation tuning", Orca learns not just from query-response pairs but also from GPT-4's step-by-step reasoning.
+
+- [Distilling the Knowledge in a Neural Network (2015)](./papers/summary/Distilling%20the%20Knowledge%20in%20a%20Neural%20Network%20(2015).md)
+
+The paper "Distilling the Knowledge in a Neural Network" presents a method of transferring knowledge from a larger model to a smaller (distilled) one using the concept of "distillation". Large models produce "soft targets", which are probability distributions across classes and carry more information than traditional "hard targets". These soft targets help the smaller model to recognize the relationships between classes learned by the larger model. 
