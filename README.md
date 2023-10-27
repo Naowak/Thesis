@@ -14,4 +14,4 @@
 - [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks (2020)](./papers/summary/Retrieval-Augmented%20Generation%20for%20Knowledge-Intensive%20NLP%20Tasks%20(2021).md)
 - [Curiosity-driven Exploration by Self-supervised Prediction (2017)](./papers/summary/Curiosity-driven%20Exploration%20by%20Self-supervised%20Prediction%20(2017).md)
 - [Neural dynamics of phoneme sequences reveal position-invariant code for content and order (2020)](./papers/summary/Neural%20dynamics%20of%20phoneme%20sequences%20reveal%20position-invariant%20code%20for%20content%20and%20order%20(2020).md)
-
+- [Orca: Progressive Learning from Complex Explanation Traces of GPT-4 (2023)](./papers/summary/Orca%20Progressive%20Learning%20from%20Complex%20Explanation%20Traces%20of%20GPT-4%20(2023).md)
