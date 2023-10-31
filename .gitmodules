@@ -4,6 +4,3 @@
 [submodule "docs_thesis"]
 	path = docs_thesis
 	url = git@github.com:Naowak/docs_thesis.git
-[submodule "code/embeddings-radar-chart"]
-	path = code/embeddings-radar-chart
-	url = git@github.com:Naowak/embeddings-radar-chart.git
