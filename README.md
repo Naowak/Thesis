@@ -57,3 +57,7 @@ This paper presents the development of Orca, a 13-billion parameter model, that 
 - [Distilling the Knowledge in a Neural Network (2015)](./papers/summary/Distilling%20the%20Knowledge%20in%20a%20Neural%20Network%20(2015).md)
 
 The paper "Distilling the Knowledge in a Neural Network" presents a method of transferring knowledge from a larger model to a smaller (distilled) one using the concept of "distillation". Large models produce "soft targets", which are probability distributions across classes and carry more information than traditional "hard targets". These soft targets help the smaller model to recognize the relationships between classes learned by the larger model. 
+
+- [Reservoir Computed based Attention Network for Few Shot Image Classification (2023)](./papers/summary/Reservoir%20Computing%20Based%20Attention%20Network%20for%20Few-shot%20Image%20Classification%20(2023).md)
+
+This paper presents an interested architecture to implement Attention with Reservoir. Instead of training feed forwards to compute Q, K, V, they use a reservoir. But this implementation does not provide a way to reduce the quadratic cost of the attention, and do not allow the use of an RNN (cause it need to compute attention on the whole data, not just the current one).
