@@ -61,3 +61,11 @@ The paper "Distilling the Knowledge in a Neural Network" presents a method of tr
 - [Reservoir Computed based Attention Network for Few Shot Image Classification (2023)](./papers/summary/Reservoir%20Computing%20Based%20Attention%20Network%20for%20Few-shot%20Image%20Classification%20(2023).md)
 
 This paper presents an interested architecture to implement Attention with Reservoir. Instead of training feed forwards to compute Q, K, V, they use a reservoir. But this implementation does not provide a way to reduce the quadratic cost of the attention, and do not allow the use of an RNN (cause it need to compute attention on the whole data, not just the current one).
+
+- [A review on the attention mechanism of deep learning (2021)](./papers/summary/A%20review%20on%20the%20attention%20mechanism%20of%20deep%20learning%20(2021).md)
+
+The 2021 review article describes the attention mechanism in deep learning as a human cognitive process-inspired method that enhances efficiency and accuracy by focusing on certain parts of data, classifies attention models by criteria such as the type of attention and input/output representations, and discusses their successful applications in computer vision and natural language processing, highlighting the mechanism's potential for model interpretability.
+
+- [Retentive Network: A Successor to Transformer for Large Language Models](./papers/summary/Retentive%20Network-%20A%20Successor%20to%20Transformer%20for%20Large%20Language%20Models%20(2023).md)
+
+RetNet is proposed as a foundational architecture for large language models, offering training parallelism, low-cost inference, and strong performance by theoretically linking recurrence and attention and introducing a retention mechanism for sequence modeling. It supports parallel, recurrent, and block-recurrent computation paradigms, with experimental results showing favorable scaling, cost-effective deployment, and efficient inference, suggesting it as a potential successor to Transformers for processing long sequences efficiently.
