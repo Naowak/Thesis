@@ -66,6 +66,6 @@ This paper presents an interested architecture to implement Attention with Reser
 
 The 2021 review article describes the attention mechanism in deep learning as a human cognitive process-inspired method that enhances efficiency and accuracy by focusing on certain parts of data, classifies attention models by criteria such as the type of attention and input/output representations, and discusses their successful applications in computer vision and natural language processing, highlighting the mechanism's potential for model interpretability.
 
-- [Retentive Network: A Successor to Transformer for Large Language Models](./papers/summary/Retentive%20Network-%20A%20Successor%20to%20Transformer%20for%20Large%20Language%20Models%20(2023).md)
+- [Retentive Network: A Successor to Transformer for Large Language Models (2023)](./papers/summary/Retentive%20Network-%20A%20Successor%20to%20Transformer%20for%20Large%20Language%20Models%20(2023).md)
 
 RetNet is proposed as a foundational architecture for large language models, offering training parallelism, low-cost inference, and strong performance by theoretically linking recurrence and attention and introducing a retention mechanism for sequence modeling. It supports parallel, recurrent, and block-recurrent computation paradigms, with experimental results showing favorable scaling, cost-effective deployment, and efficient inference, suggesting it as a potential successor to Transformers for processing long sequences efficiently.

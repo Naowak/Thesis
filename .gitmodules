@@ -7,3 +7,6 @@
 [submodule "code/embeddings-radar-chart"]
 	path = code/embeddings-radar-chart
 	url = git@github.com:Naowak/embeddings-radar-chart.git
+[submodule "code/HackATech-Tchatche"]
+	path = code/HackATech-Tchatche
+	url = git@github.com:Naowak/HackATech-Tchatche.git
