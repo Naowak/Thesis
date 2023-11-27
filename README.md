@@ -69,3 +69,7 @@ The 2021 review article describes the attention mechanism in deep learning as a 
 - [Retentive Network: A Successor to Transformer for Large Language Models (2023)](./papers/summary/Retentive%20Network-%20A%20Successor%20to%20Transformer%20for%20Large%20Language%20Models%20(2023).md)
 
 RetNet is proposed as a foundational architecture for large language models, offering training parallelism, low-cost inference, and strong performance by theoretically linking recurrence and attention and introducing a retention mechanism for sequence modeling. It supports parallel, recurrent, and block-recurrent computation paradigms, with experimental results showing favorable scaling, cost-effective deployment, and efficient inference, suggesting it as a potential successor to Transformers for processing long sequences efficiently.
+
+- [Rethinking Attention with Performers (2022)](./papers/summary/Rethinking%20Attention%20with%20Performers%20(2022).md)
+
+Performers are a new Transformer architecture with linear space and time complexity, using the FAVOR+ mechanism to efficiently approximate softmax attention. They offer significant speed and memory efficiency advantages.
