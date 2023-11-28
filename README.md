@@ -73,3 +73,15 @@ RetNet is proposed as a foundational architecture for large language models, off
 - [Rethinking Attention with Performers (2022)](./papers/summary/Rethinking%20Attention%20with%20Performers%20(2022).md)
 
 Performers are a new Transformer architecture with linear space and time complexity, using the FAVOR+ mechanism to efficiently approximate softmax attention. They offer significant speed and memory efficiency advantages.
+
+- [Comparing Generalization in Learning with Limited Numbers of Exemplars: Transformer vs. RNN in Attractor Dynamics (2023)](./papers/summary/Comparing%20Generalization%20in%20Learning%20with%20Limited%20Numbers%20of%20Exemplars%20Transformer%20vs%20RNN%20in%20Attractor%20Dynamics%20(2023).md)
+
+The study compares the generalization capabilities of Recurrent Neural Network (RNN) models and Transformers, revealing that RNNs outperform Transformers in learning from limited data. This finding highlights the importance of architecture choice in areas where data scarcity is a significant challenge.
+
+- [Group Normalization (2018)](./papers/summary/Group%20Normalization%20(2018).md)
+
+Group Normalization (GN) is presented as an effective alternative to Batch Normalization, dividing channels into groups for normalization independent of batch sizes, demonstrating stable accuracy across a wide range of batch sizes and applications. GN outperforms Batch Normalization in scenarios with small batch sizes and shows versatility in tasks like image classification, object detection, and video classification.
+
+- [The Tolman-Eichenbaum Machine Unifying Space and Relational Memory through Generalization in the Hippocampal Formation (2020)](./papers/summary/The%20Tolman-Eichenbaum%20Machine:%20Unifying%20Space%20and%20Relational%20Memory%20through%20Generalization%20in%20the%20Hippocampal%20Formation%20(2020).md)
+
+The study introduces the Tolman-Eichenbaum Machine (TEM), linking the hippocampal-entorhinal system's role in spatial and relational memory. TEM demonstrates how diverse hippocampal and entorhinal cell types contribute to memory generalization across different environments, offering insights into complex memory tasks and the neural basis of spatial and relational cognition.

@@ -1,6 +1,8 @@
 ### Retentive Network: A Successor to Transformer for Large Language Models (2023)
 
 [Paper](https://arxiv.org/pdf/2307.08621.pdf)
+[Explanation](https://medium.com/ai-fusion-labs/retentive-networks-retnet-explained-the-much-awaited-transformers-killer-is-here-6c17e3e8add8)
+[GitHub](https://github.com/Jamie-Stirling/RetNet)
 
 - **RetNet** : Proposé comme une architecture de base pour les grands modèles de langage, RetNet vise à atteindre le parallélisme lors de l'entrainement, une inférence à faible coût et de bonnes performances. Il établit une connexion théorique entre la récurrence et l'attention et introduit un mécanisme de rétention pour la modélisation de séquences.
 
