@@ -13,3 +13,6 @@
 [submodule "code/Local-LLMs"]
 	path = code/Local-LLMs
 	url = git@github.com:Naowak/Local-LLMs.git
+[submodule "code/reservoirpy"]
+	path = code/reservoirpy
+	url = git@github.com:reservoirpy/reservoirpy.git
