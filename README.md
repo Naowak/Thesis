@@ -85,3 +85,23 @@ Group Normalization (GN) is presented as an effective alternative to Batch Norma
 - [The Tolman-Eichenbaum Machine Unifying Space and Relational Memory through Generalization in the Hippocampal Formation (2020)](./papers/summary/The%20Tolman-Eichenbaum%20Machine:%20Unifying%20Space%20and%20Relational%20Memory%20through%20Generalization%20in%20the%20Hippocampal%20Formation%20(2020).md)
 
 The study introduces the Tolman-Eichenbaum Machine (TEM), linking the hippocampal-entorhinal system's role in spatial and relational memory. TEM demonstrates how diverse hippocampal and entorhinal cell types contribute to memory generalization across different environments, offering insights into complex memory tasks and the neural basis of spatial and relational cognition.
+
+- [VOYAGER An Open-Ended Embodied Agent with Large Language Models (2023)](./papers/summary/VOYAGER%20An%20Open-Ended%20Embodied%20Agent%20with%20Large%20Language%20Models%20(2023).md)
+
+"VOYAGER: An Open-Ended Embodied Agent with Large Language Models" explores a continuous learning agent named VOYAGER in Minecraft, utilizing GPT-4 for decision-making and coding. The study highlights VOYAGER's capabilities in object discovery, technology tree mastery, and map exploration, while also discussing its limitations and potential improvements.
+
+- [Weight Agnostic Neural Networks (2019)](./papers/summary/Weight%20Agnostic%20Neural%20Networks%20(2019).md)
+
+The paper "Weight Agnostic Neural Networks" examines how neural network structures can effectively perform tasks with random or untrained weights, challenging traditional deep learning approaches that heavily rely on specific weight training. It includes methodological details, experimental results, and future research implications in neural networks and machine learning.
+
+- [Hints and Random Search for Reservoir Computing Hyperparameters (2021)](./papers/summary/Hints%20and%20Random%20Search%20for%20Reservoir%20Computing%20Hyperparameters%20(2021).md)
+
+The paper "Hints and Random Search for Reservoir Computing Hyperparameters" introduces a two-step random search methodology for selecting hyperparameters in reservoir computing, highlighting its advantages over traditional grid search. It demonstrates the method's efficacy through time series prediction tasks and discusses its broader implications and potential for future research in reservoir computing.
+
+- [Combining Functional and Automata Synthesis to Discover Causal Reactive Programs (2023)](./papers/summary/Combining%20Functional%20and%20Automata%20Synthesis%20to%20Discover%20Causal%20Reactive%20Programs%20(2023).md)
+
+The paper "Combining Functional and Automata Synthesis to Discover Causal Reactive Programs" introduces a novel approach for synthesizing causal reactive programs using the Autumn programming language and the AutumnSynth algorithm. It details a methodology involving object perception, tracking, function synthesis for updates, and cause synthesis, and discusses the algorithm's applications, performance, and future research implications.
+
+- [A distributional code for value in dopamine-based reinforcement learning (2019)](./papers/summary/A%20distributional%20code%20for%20value%20in%20dopamine-%20based%20reinforcement%20learning%20(2019).md)
+
+The paper "A Distributional Code for Value in Dopamine-Based Reinforcement Learning" investigates the hypothesis that dopaminergic neurons encode a distribution of reward values, challenging the classical theory of a singular scalar code. It details experimental studies on mice with probabilistic rewards, revealing diverse dopaminergic neuron responses and discussing implications for understanding dopamine's role in the brain and potential applications in neuroscience and AI.

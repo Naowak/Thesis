@@ -16,3 +16,6 @@
 [submodule "code/reservoirpy"]
 	path = code/reservoirpy
 	url = git@github.com:reservoirpy/reservoirpy.git
+[submodule "code/ReservoirBERT"]
+	path = code/ReservoirBERT
+	url = git@github.com:Naowak/ReservoirBERT.git
