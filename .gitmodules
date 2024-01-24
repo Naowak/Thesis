@@ -19,3 +19,6 @@
 [submodule "code/ReservoirBERT"]
 	path = code/ReservoirBERT
 	url = git@github.com:Naowak/ReservoirBERT.git
+[submodule "code/Llamui"]
+	path = code/Llamui
+	url = git@github.com:Naowak/Llamui.git
