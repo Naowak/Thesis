@@ -22,3 +22,6 @@
 [submodule "code/Llamui"]
 	path = code/Llamui
 	url = git@github.com:Naowak/Llamui.git
+[submodule "code/Ai4Industry/UseCaseBdx"]
+	path = code/Ai4Industry/UseCaseBdx
+	url = git@github.com:Noctibus/UseCaseBdx.git
