@@ -2,6 +2,12 @@
 
 ## Papers
 
+### 2024
+
+- [Mixtral of Experts (2024)](https://arxiv.org/pdf/2401.04088.pdf)
+
+The paper "Mixtral of Experts" introduces Mixtral 8x7B, a Sparse Mixture of Experts (SMoE) language model that outperforms traditional models like Llama 2 70B and GPT-3.5 across various benchmarks. It features an innovative architecture where each token is processed by two selected experts out of 8 per layer, enabling efficient use of 13B active parameters from a total of 47B, leading to significant performance improvements in areas such as mathematics, code generation, and multilingual tasks.
+
 ### 2023
 
 - [Code Llama: Open Foundation Models for Code (2023)](https://arxiv.org/pdf/2308.12950.pdf)
@@ -41,6 +47,26 @@ The study compares the generalization capabilities of Recurrent Neural Network (
 - [Combining Functional and Automata Synthesis to Discover Causal Reactive Programs (2023)](https://dl.acm.org/doi/pdf/10.1145/3571249)
 
 The paper "Combining Functional and Automata Synthesis to Discover Causal Reactive Programs" introduces a novel approach for synthesizing causal reactive programs using the Autumn programming language and the AutumnSynth algorithm. It details a methodology involving object perception, tracking, function synthesis for updates, and cause synthesis, and discusses the algorithm's applications, performance, and future research implications.
+
+- [Evolving Reservoirs for Meta Reinforcement Learning (2023)](https://arxiv.org/abs/2312.06695) 
+
+The paper explores how evolving reservoirs within a meta reinforcement learning framework can enhance learning and adaptation. It employs reservoir computing to encode environmental states for reinforcement learning (RL), and utilizes inner and outer loops for developmental learning and evolutionary optimization, respectively. This approach is tested across various tasks, demonstrating improved learning capabilities, particularly in environments with partial observability and tasks requiring generalization to new, unseen challenges.
+
+- [Mixture-of-Experts Meets Instruction Tuning: A Winning Combination for Large Language Models (2023)](https://arxiv.org/pdf/2305.14705.pdf)
+
+The paper introduces Flan-MoE, a model that effectively scales instruction-finetuned language models using Sparse Mixture of Experts (MoE) to outperform dense models in various benchmarks while significantly reducing computational costs. By focusing on instruction-finetuning, Flan-MoE demonstrates that this approach is crucial for MoE models to excel in natural language understanding, reasoning, and question answering tasks, showcasing a blend of high performance and efficiency.
+
+- [WikiChat: Stopping the Hallucination of Large Language Model Chatbots by Few-Shot Grounding on Wikipedia (2023)](https://arxiv.org/pdf/2305.14292.pdf)
+
+The paper presents WikiChat, a novel few-shot LLM-based chatbot that leverages live Wikipedia information to ensure factual accuracy and up-to-dateness in conversations about both popular and niche topics. It outperforms previous methods by fetching wikipedia and fact-checking its responses.
+
+- [Large Language Models Are Zero-Shot Time Series Forecasters (2023)](https://arxiv.org/pdf/2310.07820.pdf)
+
+The paper demonstrates that large language models like GPT-3 and LLaMA-2 can zero-shot forecast time series by encoding the data as strings of numbers, enabling performance comparable to or exceeding specialized time series models without requiring task-specific training. The approach leverages LLMs' natural ability to model complex distributions and includes methods for encoding time series as numerical strings and converting discrete distributions into continuous densities for forecasting.
+
+- [Mistral 7B (2023)](https://arxiv.org/pdf/2310.06825.pdf)
+
+The paper introduces Mistral 7B, a 7-billion-parameter language model that outperforms existing models on various benchmarks by leveraging grouped-query attention for faster inference and sliding window attention for handling long sequences efficiently. This model, designed for superior performance and efficiency, is released under the Apache 2.0 license, highlighting its application in coding, mathematics, and reasoning tasks.
 
 ----
 ### 2022
@@ -90,6 +116,18 @@ The study explores how the human brain processes and sequences speech sounds. Us
 - [The Tolman-Eichenbaum Machine Unifying Space and Relational Memory through Generalization in the Hippocampal Formation (2020)](https://www.biorxiv.org/content/10.1101/770495v1.full.pdf)
 
 The study introduces the Tolman-Eichenbaum Machine (TEM), linking the hippocampal-entorhinal system's role in spatial and relational memory. TEM demonstrates how diverse hippocampal and entorhinal cell types contribute to memory generalization across different environments, offering insights into complex memory tasks and the neural basis of spatial and relational cognition.
+
+- [Hierarchical-Task Reservoir for Anytime POS Tagging from Continuous Speech (2020)](https://inria.hal.science/hal-02594495/document)
+
+The paper introduces the Hierarchical-Task Reservoir (HTR) for real-time sentence parsing from continuous speech, focusing on Echo State Networks (ESN), Handwritten Text Recognition (HTR), and enhancing the processing of increasing levels of language abstraction (phone, word, and POS tag estimation). It demonstrates HTR's superior performance in experimental comparisons, emphasizing its potential for language comprehension modeling and real-time human-robot interaction applications.
+
+- [Reinforcement learning with convolutional reservoir computing (2020)](https://link.springer.com/article/10.1007/s10489-020-01679-3)
+
+The paper introduces a novel Reinforcement Learning with Convolutional Reservoir Computing (RCRC) model, leveraging a fixed random-weight CNN for visual feature extraction and an Echo State Network (ESN) for time-series feature. This approach, using random filters and a reservoir for final predictions and state propagation, avoids the need for extensive data storage and feature extractor training, reducing computational costs while maintaining the ability to solve multiple RL tasks with a single feature extractor and a task-dependent linear transformation. This model showcases the inherent feature extraction capacity of network structures and its generalization ability across diverse environments.
+
+- [TinyBERT: Distilling BERT for Natural Language Understanding (2020)](https://arxiv.org/pdf/1909.10351.pdf)
+
+The paper introduces TinyBERT, a model that distills the BERT model for efficient natural language understanding, achieving over 96.8% of BERT's performance while being 7.5x smaller and 9.4x faster. TinyBERT utilizes a novel Transformer distillation method and a two-stage learning framework, significantly reducing computational costs without the need for extensive data storage or feature extractor training.
 
 ----
 ### 2019
