@@ -25,6 +25,9 @@
 [submodule "code/Ai4Industry/UseCaseBdx"]
 	path = code/Ai4Industry/UseCaseBdx
 	url = git@github.com:Noctibus/UseCaseBdx.git
-[submodule "code/ReservoirMISTRAL"]
-	path = code/ReservoirMISTRAL
-	url = git@github.com:Naowak/ReservoirMISTRAL.git
+[submodule "code/ReservoirGPT"]
+	path = code/ReservoirGPT
+	url = git@github.com:Naowak/ReservoirGPT.git
+[submodule "code/SummaTalk"]
+	path = code/SummaTalk
+	url = https://github.com/Naowak/SummaTalk

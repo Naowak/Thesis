@@ -8,6 +8,8 @@
 
 The paper "Mixtral of Experts" introduces Mixtral 8x7B, a Sparse Mixture of Experts (SMoE) language model that outperforms traditional models like Llama 2 70B and GPT-3.5 across various benchmarks. It features an innovative architecture where each token is processed by two selected experts out of 8 per layer, enabling efficient use of 13B active parameters from a total of 47B, leading to significant performance improvements in areas such as mathematics, code generation, and multilingual tasks.
 
+------
+
 ### 2023
 
 - [Code Llama: Open Foundation Models for Code (2023)](https://arxiv.org/pdf/2308.12950.pdf)
