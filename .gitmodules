@@ -31,3 +31,12 @@
 [submodule "code/SummaTalk"]
 	path = code/SummaTalk
 	url = https://github.com/Naowak/SummaTalk
+[submodule "code/DistilledTransformerReservoir"]
+	path = code/DistilledTransformerReservoir
+	url = git@github.com:Naowak/DistilledTransformerReservoir.git
+[submodule "code/DataBattle2024"]
+	path = code/DataBattle2024
+	url = git@github.com:Naowak/DataBattle2024.git
+[submodule "code/evo-topo"]
+	path = code/evo-topo
+	url = git@github.com:naomichx/evo-topo.git
