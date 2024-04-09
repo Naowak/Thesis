@@ -70,6 +70,14 @@ The paper demonstrates that large language models like GPT-3 and LLaMA-2 can zer
 
 The paper introduces Mistral 7B, a 7-billion-parameter language model that outperforms existing models on various benchmarks by leveraging grouped-query attention for faster inference and sliding window attention for handling long sequences efficiently. This model, designed for superior performance and efficiency, is released under the Apache 2.0 license, highlighting its application in coding, mathematics, and reasoning tasks.
 
+-[Analyzing Transformers in Embedding Space (2023)](https://arxiv.org/pdf/2209.02535.pdf)
+
+The paper presents a novel approach to interpreting Transformer-based models by projecting their parameters into the embedding space, demonstrating that this method allows for the interpretation of both pretrained and fine-tuned models. The findings suggest that understanding Transformers in the embedding space can abstract away model specifics and enable various applications, such as aligning parameters of different models and constructing classifiers without additional training.
+
+- [Jump to Conclusions: Short-Cutting Transformers With Linear Transformations (2023)](https://arxiv.org/pdf/2303.09435.pdf)
+
+The article "Jump to Conclusions Short-Cutting Transformers With Linear Transformations" explores the use of linear transformations to accelerate the inference of transform models. The authors find that using non-contextual linear computations in transformer inference leads to a slight deterioration in predictions, opening up new avenues of research to improve model efficiency.
+
 ----
 ### 2022
 
@@ -95,6 +103,10 @@ The 2021 review article describes the attention mechanism in deep learning as a 
 - [Hints and Random Search for Reservoir Computing Hyperparameters (2021)](https://inria.hal.science/hal-03203318/file/Hinaut2021_ICANN_Reservoir-Random-Search_HAL-preprint-v2.pdf)
 
 The paper "Hints and Random Search for Reservoir Computing Hyperparameters" introduces a two-step random search methodology for selecting hyperparameters in reservoir computing, highlighting its advantages over traditional grid search. It demonstrates the method's efficacy through time series prediction tasks and discusses its broader implications and potential for future research in reservoir computing.
+
+- [ViR: the Vision Reservoir (2021)](https://arxiv.org/pdf/2112.13545.pdf)
+
+This paper introduces ViR, a novel model for image classification that is more efficient than the Vision Transformer (ViT). ViR achieves superior performance on small-scale benchmarks with fewer parameters and a smaller memory footprint compared to ViT.
 
 ----
 ### 2020
@@ -131,6 +143,10 @@ The paper introduces a novel Reinforcement Learning with Convolutional Reservoir
 
 The paper introduces TinyBERT, a model that distills the BERT model for efficient natural language understanding, achieving over 96.8% of BERT's performance while being 7.5x smaller and 9.4x faster. TinyBERT utilizes a novel Transformer distillation method and a two-stage learning framework, significantly reducing computational costs without the need for extensive data storage or feature extractor training.
 
+- [A Reservoir Computing Approach to Word Sense Disambiguation (2020)](https://sci-hub.3800808.com/10.1007/s12559-020-09758-w)
+
+This paper presents a reservoir computing approach, specifically the deep bi-directional echo state network (DBiESN), for word sense disambiguation (WSD) in natural language processing. The authors propose a novel method for exploiting reservoirs' steady states and demonstrate that the DBiESN model offers a good alternative to other tested models, achieving similar accuracy in WSD tasks with fewer trainable parameters.
+
 ----
 ### 2019
 
@@ -145,6 +161,10 @@ The paper "Weight Agnostic Neural Networks" examines how neural network structur
 - [A distributional code for value in dopamine-based reinforcement learning (2019)](https://sci-hub.3800808.com/10.1038/s41586-019-1924-6)
 
 The paper "A Distributional Code for Value in Dopamine-Based Reinforcement Learning" investigates the hypothesis that dopaminergic neurons encode a distribution of reward values, challenging the classical theory of a singular scalar code. It details experimental studies on mice with probabilistic rewards, revealing diverse dopaminergic neuron responses and discussing implications for understanding dopamine's role in the brain and potential applications in neuroscience and AI.
+
+- [Behaviors of Reservoir Computing Models for Textual Documents Classification (2019)](https://sci-hub.3800808.com/10.1109/ijcnn.2019.8852304)
+
+The article "Jump to Conclusions Short-Cutting Transformers With Linear Transformations" explores the use of linear transformations to accelerate the inference of transform models. The authors find that using non-contextual linear computations in transformer inference leads to a slight deterioration in predictions, opening up new avenues of research to improve model efficiency.
 
 ----
 ### 2018
@@ -164,6 +184,10 @@ This paper introduced the "Transformer" architecture, which uses multi-head atte
 
 The paper "Curiosity-driven Exploration by Self-supervised Prediction" addresses the challenge of exploration in reinforcement learning environments with sparse rewards by introducing curiosity as an intrinsic reward. This curiosity is gauged by the prediction error of an agent's future state $s_{t+1}$ based on its current state $s_t$. Leveraging this method encourages agents to effectively explore intricate environments.
 
+- [Cosine Normalization: Using Cosine Similarity Instead of Dot Product in Neural Networks (2017)](https://arxiv.org/pdf/1702.05870.pdf)
+
+The paper introduces a novel technique called cosine normalization, which utilizes cosine similarity or Pearson correlation coefficient instead of dot product in neural networks. This approach effectively reduces the variance of neurons, improves model robustness, and accelerates training, as demonstrated through experiments on various network types and datasets.
+
 ----
 ### 2015
 
@@ -177,6 +201,13 @@ The paper "Distilling the Knowledge in a Neural Network" presents a method of tr
 - [GRU : Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation (2014)](https://arxiv.org/pdf/1406.1078v3.pdf)
 
 This paper introduces the RNN Encoder-Decoder with Gated Recurrent Units (GRU) that employ "gates" to control information flow. These "gates" decide what information to retain or discard, optimizing sequence encoding and decoding processes.
+
+---
+### 2010
+
+- [A NEAT Way for Evolving Echo State Networks (2010)](https://www.researchgate.net/publication/220838636_A_NEAT_way_for_evolving_Echo_State_Networks)
+
+This paper presents a method for evolving Echo State Networks (ESNs) by combining evolution and learning. The goal is to automatically discover function approximators that can perform well in complex real-world tasks. The paper provides a brief overview of ESNs, describes the methodology used, presents the experiments and outcomes, and concludes with a discussion on future improvements.
 
 ---
 ### 1997
