@@ -46,3 +46,6 @@
 [submodule "code/privateGPT"]
 	path = code/privateGPT
 	url = https://github.com/imartinez/privateGPT
+[submodule "code/ForwardAnarchistUnits"]
+	path = code/ForwardAnarchistUnits
+	url = git@github.com:Naowak/ForwardAnarchistUnits.git
