@@ -78,12 +78,24 @@ The paper presents a novel approach to interpreting Transformer-based models by 
 
 The article "Jump to Conclusions Short-Cutting Transformers With Linear Transformations" explores the use of linear transformations to accelerate the inference of transform models. The authors find that using non-contextual linear computations in transformer inference leads to a slight deterioration in predictions, opening up new avenues of research to improve model efficiency.
 
+- [AmadeusGPT a natural language interface for interactive animal behavioral analysis (2023)](https://arxiv.org/pdf/2307.04858.pdf)
+
+AmadeusGPT is a natural language interface that turns natural language descriptions of animal behaviors into machine-executable code, using a novel dual-memory mechanism to overcome the context window limitation of large language models. It allows users to interactively refine results and add new behavioral modules as needed, without requiring any coding skills, and has shown excellent performance on the MABe 2022 behavior challenge tasks.
+
 ----
 ### 2022
 
 - [Rethinking Attention with Performers (2022)](https://arxiv.org/pdf/2009.14794.pdf)
 
 Performers are a new Transformer architecture with linear space and time complexity, using the FAVOR+ mechanism to efficiently approximate softmax attention. They offer significant speed and memory efficiency advantages.
+
+- [The Forward-Forward Algorithm: Some Preliminary Investigations (2022)](https://arxiv.org/pdf/2212.13345.pdf)
+
+The Forward-Forward Algorithm (FF) is a new learning procedure for neural networks that aims to replace the forward and backward passes of backpropagation with two forward passes, one with positive data and the other with negative data. Each layer in the network has its own objective function, which is to have high goodness for positive data and low goodness for negative data, and the sum of the squared activities in a layer can be used as the goodness. The FF algorithm is different from backpropagation in that it does not require the computation of gradients or the storage of intermediate values, and it can be used in situations where the precise details of the forward computation are unknown.
+
+- [Predictive Coding A Theoritical and Experimental Review (2022)](https://arxiv.org/pdf/2107.12979.pdf)
+
+Predictive coding is a theory of brain function that suggests the brain's primary objective is to minimize prediction errors, which are the differences between predicted and actual sensory input. The theory proposes that the brain achieves this through a hierarchical network of layers, each making predictions about the activity of the layer below and passing prediction errors upwards to update higher-level predictions.
 
 ----
 ### 2021
@@ -173,6 +185,10 @@ The article "Jump to Conclusions Short-Cutting Transformers With Linear Transfor
 
 Group Normalization (GN) is presented as an effective alternative to Batch Normalization, dividing channels into groups for normalization independent of batch sizes, demonstrating stable accuracy across a wide range of batch sizes and applications. GN outperforms Batch Normalization in scenarios with small batch sizes and shows versatility in tasks like image classification, object detection, and video classification.
 
+- [Representation Learning with Contrastive Predictive Coding (2018)](https://arxiv.org/pdf/1807.03748.pdf)
+
+Contrastive Predictive Coding (CPC) is a method for unsupervised learning that combines autoregressive modeling and noise-contrastive estimation to learn abstract representations of high-dimensional data. CPC has been shown to achieve strong or state-of-the-art performance in a variety of domains, including audio, images, natural language, and reinforcement learning, when used as stand-alone features or in conjunction with the main loss.
+
 ----
 ### 2017
 
@@ -201,6 +217,17 @@ The paper "Distilling the Knowledge in a Neural Network" presents a method of tr
 - [GRU : Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation (2014)](https://arxiv.org/pdf/1406.1078v3.pdf)
 
 This paper introduces the RNN Encoder-Decoder with Gated Recurrent Units (GRU) that employ "gates" to control information flow. These "gates" decide what information to retain or discard, optimizing sequence encoding and decoding processes.
+
+- [Neural Turing Machine (2014)](https://arxiv.org/pdf/1410.5401.pdf)
+
+The Neural Turing Machine (NTM) is a neural network architecture that includes an external memory component, allowing it to store and manipulate information in a way that is analogous to a traditional computer's memory. The NTM uses a differentiable attention mechanism to read from and write to this memory, allowing it to learn to perform complex tasks that require reasoning and memory. The NTM is trained using gradient descent, making it possible to learn its parameters from data.
+
+---
+### 2011
+
+- [Predictive Coding (2011)](https://sci-hub.3800808.com/https://doi.org/10.1002/wcs.142)
+
+Predictive coding is a framework that explains how the nervous system reduces redundancy and efficiently codes sensory information by transmitting only the unpredicted portions of an incoming signal. This framework provides a functional explanation for various neural responses and aspects of brain organization, such as center-surround response properties and biphasic temporal antagonism in the retina and lateral geniculate nucleus, as well as oriented receptive fields and contextual effects in the higher visual system.
 
 ---
 ### 2010
