@@ -43,3 +43,9 @@
 [submodule "code/ForwardAnarchistUnits"]
 	path = code/ForwardAnarchistUnits
 	url = git@github.com:Naowak/ForwardAnarchistUnits.git
+[submodule "code/playground"]
+	path = code/playground
+	url = git@gitlab.inria.fr:pbernard/playground.git
+[submodule "code/seqHPC"]
+	path = code/seqHPC
+	url = git@github.com:HugoChateauLaurent/seqHPC.git
