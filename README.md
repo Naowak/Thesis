@@ -159,6 +159,10 @@ The paper introduces TinyBERT, a model that distills the BERT model for efficien
 
 This paper presents a reservoir computing approach, specifically the deep bi-directional echo state network (DBiESN), for word sense disambiguation (WSD) in natural language processing. The authors propose a novel method for exploiting reservoirs' steady states and demonstrate that the DBiESN model offers a good alternative to other tested models, achieving similar accuracy in WSD tasks with fewer trainable parameters.
 
+- [A journey in ESN and LSTM visualisations on a language task (2020)](https://arxiv.org/pdf/2012.01748)
+
+This paper compares the performance of Echo State Networks (ESNs) and Long Short-Term Memory networks (LSTMs) on a Cross-Situational Learning (CSL) task, which involves learning the meaning of words through co-occurrences with visual stimuli. The results show that both models are able to successfully learn the task, but the LSTM reaches the lowest error for the basic corpus while the ESN is quicker to train and outperforms the LSTM on more challenging datasets without any further tuning needed.
+
 ----
 ### 2019
 
