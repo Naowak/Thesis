@@ -49,3 +49,6 @@
 [submodule "code/seqHPC"]
 	path = code/seqHPC
 	url = git@github.com:HugoChateauLaurent/seqHPC.git
+[submodule "code/RecurrentAttentionNetwork"]
+	path = code/RecurrentAttentionNetwork
+	url = git@github.com:Naowak/RecurrentAttentionNetwork.git
