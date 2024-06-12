@@ -8,6 +8,10 @@
 
 The paper "Mixtral of Experts" introduces Mixtral 8x7B, a Sparse Mixture of Experts (SMoE) language model that outperforms traditional models like Llama 2 70B and GPT-3.5 across various benchmarks. It features an innovative architecture where each token is processed by two selected experts out of 8 per layer, enabling efficient use of 13B active parameters from a total of 47B, leading to significant performance improvements in areas such as mathematics, code generation, and multilingual tasks.
 
+- [TransformerFAM Feedback attention is working memory (2024)](https://arxiv.org/pdf/2404.09173)
+
+Le papier présente TransformerFAM, une nouvelle architecture de Transformer qui permet à l'attention de s'appliquer à la fois aux données homogènes et aux représentations latentes via une boucle de rétroaction. Cette modification de l'architecture favorise naturellement l'émergence de la mémoire de travail au sein des Transformers. Pendant l'inférence, TransformerFAM a une complexité computationnelle de O(L) et une complexité mémoire de O(1), où L est la longueur des jetons traités. Les expériences montrent que TransformerFAM améliore significativement les performances des Transformers sur les tâches de long contexte, quel que soit la taille du modèle (1B, 8B, 24B).
+
 ------
 
 ### 2023
@@ -246,3 +250,10 @@ This paper presents a method for evolving Echo State Networks (ESNs) by combinin
 - [Long Short Term Memory (1997)](https://www.researchgate.net/publication/13853244_Long_Short-term_Memory)
 
 The LSTM, a significant advancement in recurrent neural networks, addresses the vanishing gradient issue faced by traditional RNNs using unique gate mechanisms. These gates, including the forget, input, and output gates, determine the information flow, leveraging sigmoid and tanh functions to maintain and control long-term memory effectively.
+
+---
+### 1991
+
+- [Distributed Representations, Simple Recurrent Networks, and Grammatical Structure (1991)](https://link.springer.com/content/pdf/10.1007/BF00114844.pdf)
+
+Le papier présente un réseau de neurones récurrents simples (SRN) entraîné sur des phrases multiclausales contenant des relatives clauses multiplement imbriquées. L'analyse des patterns d'activation des unités cachées révèle que le réseau résout la tâche en développant des représentations distribuées complexes qui encodent les relations grammaticales et la structure hiérarchique des constituants.
