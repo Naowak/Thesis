@@ -52,3 +52,6 @@
 [submodule "code/RecurrentAttentionNetwork"]
 	path = code/RecurrentAttentionNetwork
 	url = git@github.com:Naowak/RecurrentAttentionNetwork.git
+[submodule "code/Llamag"]
+	path = code/Llamag
+	url = git@github.com:VirgileBoraud/Llamag.git
