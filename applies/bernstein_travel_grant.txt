@@ -1,0 +1,13 @@
+Dear Conference Committee, 
+
+I am currently a first-year Ph.D. student, specializing in the field of Artificial Intelligence and Neuroscience. My thesis focuses particularly on integrating attention mechanisms, such as those described in Transformers, within Reservoir Computing, a recurrent model highly appreciated in the neuroscience domain. 
+
+Coming from an academic background strongly oriented towards mathematics and computer science, I have been progressively exploring the vast field of neuroscience as my research advances. I am convinced that a conference such as the one you are proposing will enable me to better grasp the challenges, issues, and recent advancements in this field. Moreover, it will provide me with the opportunity to exchange ideas with researchers and fellow Ph.D. students whose work is similar to or complements my own. I am confident that this conference will allow me to discover new architectures and thought processes that I had not previously considered, thereby having a significant impact on the direction of my thesis. I would therefore be delighted to participate in this event. 
+
+Furthermore, I believe that the experiences and reflections I have undertaken this year could pique the interest of many individuals. Indeed, I consider that current Transformers, such as ChatGPT, remain quite distant from the mechanisms present in our brains, especially regarding a crucial aspect: working memory. This is why I am seeking to integrate this dimension into my architecture, which is based on Reservoir Computing and the attention blocks of Transformers. I believe that this approach could inspire many people regarding the possible improvements to current models. 
+
+Thank you in advance for your consideration, 
+
+P.S: I am not yet a member of Bernstein, the procedure is underway, but it takes some time. 
+
+Yannis Bendi-Ouis.

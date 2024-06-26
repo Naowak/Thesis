@@ -124,6 +124,10 @@ The paper "Hints and Random Search for Reservoir Computing Hyperparameters" intr
 
 This paper introduces ViR, a novel model for image classification that is more efficient than the Vision Transformer (ViT). ViR achieves superior performance on small-scale benchmarks with fewer parameters and a smaller memory footprint compared to ViT.
 
+- [Transformer Feed-Forward Layers Are Key-Value Memories (2021)](https://aclanthology.org/2021.emnlp-main.446.pdf)
+
+The paper explores transformer feed-forward layers, showing they function as key-value memories where each key detects specific input patterns and each value predicts output vocabulary distributions. The study reveals these layers capture patterns across different abstraction levels, with lower layers identifying shallow patterns and upper layers capturing more semantic ones, indicating a structured, hierarchical processing of input data within transformers.
+
 ----
 ### 2020
 
