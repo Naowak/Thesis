@@ -55,3 +55,9 @@
 [submodule "code/Llamag"]
 	path = code/Llamag
 	url = git@github.com:VirgileBoraud/Llamag.git
+[submodule "code/JuvenHinaut2020_IJCNN"]
+	path = code/JuvenHinaut2020_IJCNN
+	url = git@github.com:Naowak/JuvenHinaut2020_IJCNN.git
+[submodule "code/EmbeddingsAPI"]
+	path = code/EmbeddingsAPI
+	url = git@github.com:Naowak/EmbeddingsAPI.git
