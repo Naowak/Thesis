@@ -16,11 +16,9 @@ Certaines entreprises pionnières ont rapidement compris qu'elles pouvaient bén
 
 Toutefois, il est essentiel que ces outils ne soient pas uniquement entre les mains de quelques puissants acteurs, capables d'influencer les biais de leurs modèles qu'il distribue à grande échelle, leur permettant ainsi une influence de masse. La transparence de ces modèles, avec l'ouverture des données d'entraînement et des poids associés, est la solution la plus appropriée pour permettre à toute entité externe de vérifier la fiabilité et la sécurité des modèles proposés. Bien que cette approche ne soit pas appréciée par la majorité de ces entreprises, certaines d'entre elles, comme Meta et Mistral, investissent considérablement dans les modèles open-weights, en distribuant gratuitement des variantes de leurs modèles LlaMa et Mistral.
 
-Grâce à ces efforts, de nombreux groupes, publics et privés, sont désormais en mesure de déployer des modèles puissants, assurant ainsi la souveraineté de leurs données et évitant la concentration de cette richesse et de ce potentiel de pouvoir en un seul point. Dans ce contexte, nous avons mené plusieurs tests dans le centre Inria de l'université de Bordeaux concernant le déploiement de tels modèles. 
+Grâce à ces efforts, de nombreux groupes, publics et privés, sont désormais en mesure de déployer des modèles puissants, assurant ainsi la souveraineté de leurs données et évitant la concentration de cette richesse et de ce potentiel de pouvoir en un seul point. Mais, quand bien même ces modèles sont disponibles pour tous, il n'est pas aisé de les déployer ni d'estimer les ressources nécessaires pour le faire. Car s'il est simple de servir un modèle à un utilisateur, il est bien plus complexe de le déployer pour des dizaines, centaines voire milliers d'utilisateurs en simultanés. Dans ce contexte, nous avons mené plusieurs tests dans le centre Inria de l'université de Bordeaux concernant le déploiement de tels modèles. 
 
-Laius sur l'intérêt d'avoir des réquêtes simultanées
-
-## Objectif 
+## Objectifs
 
 L'objectif principal de notre étude est de répondre aux préoccupations de sécurité et de confidentialité soulevées par l'utilisation croissante de solutions propriétaires de LLM - telles que ChatGPT - par les étudiants et les chercheurs du centre Inria de l'Université de Bordeaux. En effet, plus de 90 % des étudiants [REF] utilisent ces outils pour les aider dans leur travail quotidien, que ce soit pour la rédaction, la programmation, la relecture d'articles ou le brainstorming.
 
@@ -63,16 +61,21 @@ Parmi les différentes méthodes de quantification, nous pouvons citer AWQ, GPTQ
 
 ## Expérience
 
-### Modèles testés
-- Mistral-7B
-- Mixtral-8x7b
-- Mixtral-8x22b
-- Codestral-22b
-- LLaMa-3-70B
+## Expérimentation
 
-### GPUs testés
-- NVIDIA V100 16 Go
-- NVIDIA A100 40 Go
+Dans cette étude, nous cherchons à déterminer la charge maximale de requêtes simultanées qu'un serveur équipé de GPU V100 16 Go ou A100 40 Go peut supporter, en fonction du LLM utilisé. Pour cela, nous avons effectué des tests en augmentant progressivement le nombre de requêtes simultanées et la taille des prompts, jusqu'à atteindre la charge maximale. Pour chaque modèle et GPU, nous avons mesuré la charge mémoire, la vitesse d'exécution et le nombre de tokens par seconde en fonction du nombre de requêtes simultanées et de la taille maximale du contexte.
+
+Nous avons choisi de nous concentrer principalement sur les modèles proposés par Mistral AI, en raison de leur diversité, popularité et compétences. Nous apprécions également leur performance sur les langues européennes, en particulier le français. De plus, leur architecture Mixture of Experts [REF] permet une économie de calcul pendant l'inférence, en ne sélectionnant qu'une partie des poids du modèle à chaque étape, ce qui réduit également la consommation d'énergie.
+
+En outre, nous avons inclus le modèle LLaMa-3-70B de Meta, qui obtient des performances comparables à celles de GPT-4 avec ses 70 milliards de paramètres. Cette taille de modèle semble être un bon compromis entre taille et performance, ce qui justifie son inclusion dans notre étude.
+
+Ainsi, nous avons testé les modèles suivants :
+
+* Mistral-7B
+* Mixtral-8x7b
+* Mixtral-8x22b
+* Codestral-22b
+* LLaMa-3-70B
 
 ## Resultats
 - charge mémoire
