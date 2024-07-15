@@ -82,24 +82,14 @@ Ainsi, nous avons testé les modèles suivants :
 - vitesse éxécution, token/s, nb utilisateur simultannée
 - taille max context
 
-## Discussions & perpectives
-
-Mistral-7b (V100 vs A100)
-Mixtral-8x7b (2 GPU A100 40G)
-Mixtral-8x22b (4 GPU A100 40G)
-Codestral-22b (2 V100 vs A100 vs Q4 1 V100)
-Un modèle 70b (LLama3, Qwen2 ?)
-
-
-
-
-
 ### Mixtral 8x22B (Q8 ou Q4 ?) : 4 GPU A100 40G
 ![](https://notes.inria.fr/uploads/upload_d480f98200318d8f278552de6c07aca6.png)
 ![](https://notes.inria.fr/uploads/upload_34226aa139d0a16a5559dec0979aa156.png)
 ![](https://notes.inria.fr/uploads/upload_b05b0be02b5357a9a348e27fc7240f57.png)
 
+## Discussions & perpectives
 
+## Conclusion
 
 ## References
 

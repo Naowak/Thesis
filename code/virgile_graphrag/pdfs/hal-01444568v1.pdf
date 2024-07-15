@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+    <title>S&eacute;lection de votre &eacute;tablissement</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="Home Organisation, Discovery Service, WAYF, Shibboleth, Login, AAI">
+    <meta name="description" content="Choose your home organisation to authenticate">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="shortcut icon" href="/images/renater-small.png">
+    <!-- Font css -->
+    <link rel="stylesheet" type="text/css" href="/lib/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/lib/foundation/css/foundation.min.css"/>
+
+    <link rel="stylesheet" type="text/css" href="css/default-styles.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/renater.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/fonts.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+    <link rel="stylesheet" href="WAYF/select2.min.css" type="text/css" >
+    <script type="text/javascript" src="js/select2.min.js"></script>
+    <script type="text/javascript" src="js/i18n/fr.js"></script>
+    <script type="text/javascript" src="js/select2Functions.js"></script>
+
+<!--    <script type="text/javascript" src="js/jquery.js"></script> -->
+    <script type="text/javascript" src="/lib/foundation/js/vendor/foundation.min.js"></script>
+
+    <script type="text/javascript">
+    <!--
+
+    // Prevent that WAYF is loaded in an IFRAME
+    function preventIframeEmbedding(){
+        if (top != self) {
+            top.location = self.location;
+        }
+    }
+
+    // Set focus to submit button or drop down list
+    function setFocus(){
+        // Skip this if we cannot access the form elements
+        if (
+            !document.IdPList ||
+            !document.IdPList.Select
+            ){
+            return;
+        }
+
+        if (
+                document.IdPList.user_idp &&
+                document.IdPList.user_idp.selectedIndex == 0
+            ){
+            // Set focus to select
+            document.IdPList.user_idp.focus();
+        } else {
+            // Set focus to submit button
+            document.IdPList.Select.focus();
+        }
+    }
+
+    // Perform input validation on WAYF form
+    function checkForm(){
+        if(
+            document.IdPList.user_idp &&
+            document.IdPList.user_idp.selectedIndex == 0
+        ){
+            alert(unescape('Vous devez sélectionner un établissement valide.'));
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    // Init WAYF
+    function init(){
+        preventIframeEmbedding();
+
+        setFocus();
+
+                        $('.userIdPSelection').select2({
+                  ajax: {
+		    url: 'api.php/idps?" f=1',
+                    delay: 250,
+                    dataType: 'json',
+                    data: function (params) {
+                    var query = {
+                    search: params.term,
+                    page: params.page || 1
+                    }
+                    // Query parameters will be ?search=[term]&page=[page]
+                    return query;
+                    },
+                    error: function(jqxhr, status, exception) {
+                      console.error('Exception:', exception);
+                                          }
+                  },
+                  placeholder: "Veuillez s&eacute;lectionner l'&eacute;tablissement auquel vous appartenez.",
+                  allowClear: true,
+                  language: "fr",
+                  templateResult: formatIdp,
+                  templateSelection: formatIdp,
+                  escapeMarkup: function (text) { return text; }
+                });
+                // Auto-submit when an idp is selected
+                // $('.userIdPSelection').on('select2:select', function (e) {
+                //   document.getElementById("IdPList").submit();
+                // });
+                // Preselect last used IdP
+                // Fetch the preselected item, and add to the control
+                var idpSelect = $('.userIdPSelection');
+                $.ajax({
+                    type: 'GET',
+                    url: 'api.php/idps?lastIdp',
+                }).then(function (data) {
+                    // create the option and append to Select2
+                    if(data.id != null) {
+                        var option = new Option(JSON.stringify(data), data.id, true, true);
+                        idpSelect.append(option).trigger('change');
+                    }
+                });
+                    }
+
+    // Call init function when DOM is ready
+    $(document).ready(init);
+
+        $(
+        function () {
+                // Loading foundation
+                $(document).foundation();
+        });
+    -->
+    </script>
+</head>
+
+<body>
+
+<main class="row expanded">
+  <aside role="presentation" class="small-12 medium-3 medium-push-9 columns">
+  </aside>
+  <h1 role="banner" class="title small-12 medium-9 end text-center">Fédération Éducation - Recherche</h1>
+  <article class="small-10 small-pull-1 medium-6 medium-pull-5 medium-offset-1 large-5 large-pull-5 large-offset-2 columns">
+
+<!-- Body: Start -->
+<!-- Identity Provider Selection: Start -->
+<i class="fa fa-university"  aria-hidden="true"></i><h1 tabindex="0">S&eacute;lectionnez votre &eacute;tablissement </h1>
+<form id="IdPList" name="IdPList" method="post" onSubmit="return select2CheckForm()" action="/renater/WAYF?entityID=https%3A%2F%2Fapi.istex.fr%2Fsp&amp;return=https%3A%2F%2Fapi.istex.fr%2FShibboleth.sso%2FLogin%3FSAMLDS%3D1%26target%3Dss%253Amem%253A5f2399509fb590600be9159356916241262647e70f8be11e726ee9cbf8823fba">
+    <div id="userInputArea">
+        <p class="promptMessage"></p>
+                <p role="presentation" tabindex="0" class="promptMessage">Pour acc&eacute;der au service <span class="serviceName">API ISTEX</span> s&eacute;lectionnez ou cherchez l'&eacute;tablissement auquel vous appartenez.</p>
+        <div class="text-right">
+      <select name="user_idp" id="userIdPSelection" class="userIdPSelection" tabindex="0">
+              </select>
+            <input class="button" type="submit" name="Select" accesskey="s" value="S&eacute;lection" tabindex="0">
+        </div>
+        <div  class="text-left">
+            <p class="selectOptions">
+                <label for="rememberForSession">
+                                    <input type="checkbox"  name="session" id="rememberForSession" value="true" tabindex="0">
+                                    Se souvenir de mon choix pour cette session.                                </label>
+                                <!-- Value permanent must be a number which is equivalent to the days the cookie should be valid -->
+                <label for="rememberPermanent">
+                                    <input type="checkbox" name="permanent" id="rememberPermanent" value="100" tabindex="0">
+                                    Se souvenir de mon choix d&eacute;finitivement et contourner cette &eacute;tape &agrave; partir de maintenant.                                </label>
+                            </p>
+        </div>
+    </div>
+</form>
+
+<!--<p><a href="http://www.switch.ch/" target="_blank">SWITCH</a> fournit des prestations innovantes et uniques pour les hautes &eacute;coles suisses et les utilisateurs d'Internet.</p>-->
+<!-- Identity Provider Selection: End -->
+
+</article>
+
+</main>
+<footer>
+    <p>&copy; <img src='/images/renater.svg' alt='Logo RENATER' width='80px'/> 2020 - All rights reserved.</p>
+
+</footer>
+</body>
+</html>
