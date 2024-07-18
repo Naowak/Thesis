@@ -61,3 +61,6 @@
 [submodule "code/EmbeddingsAPI"]
 	path = code/EmbeddingsAPI
 	url = git@github.com:Naowak/EmbeddingsAPI.git
+[submodule "code/CrossSituationalLearning"]
+	path = code/CrossSituationalLearning
+	url = git@github.com:Naowak/CrossSituationalLearning.git
