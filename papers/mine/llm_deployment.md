@@ -1,5 +1,11 @@
 # Papier déploiement LLM
 
+## Authors
+
+Yannis Bendi-Ouis, Centre Inria de l'Université de Bordeaux, Mnemosyne  
+Dan Dutarte, Centre Inria de l'Université de Bordeaux, SED  
+Xavier Hinaut, Centre Inria de l'Université de Bordeaux, Mnemosyne
+
 ## Abstract
 
 Depuis la sortie de ChatGPT en novembre 2023, les modèles de langage de grande taille (LLM) ont connu un succès considérable, y compris dans la communauté open-source, avec de nombreux modèles open-weight disponibles. Toutefois, les besoins nécessaires pour déployer un tel service sont souvent méconnus et difficiles à évaluer à l'avance.
@@ -14,7 +20,7 @@ Suite à la sortie de ChatGPT par OpenAI en novembre 2023, les modèles de langa
 
 Certaines entreprises pionnières ont rapidement compris qu'elles pouvaient bénéficier d'un monopole grâce à cette avancée technologique, leur conférant ainsi un pouvoir décisionnel sans précédent. Pour s'assurer de conserver ce monopole, ces entreprises militent désormais auprès des gouvernements pour la régulation de ces modèles, prétextant les risques et les dangers potentiels de leur utilisation à des fins malveillantes. Elles proposent des mesures allant de l'interdiction d'entraîner des modèles au-delà d'une certaine puissance de calcul jusqu'au contrôle des GPU par les gouvernements, avec possibilité de désactivation à distance. [REF openAI]
 
-Toutefois, il est essentiel que ces outils ne soient pas uniquement entre les mains de quelques puissants acteurs, capables d'influencer les biais de leurs modèles qu'il distribue à grande échelle, leur permettant ainsi une influence de masse. La transparence de ces modèles, avec l'ouverture des données d'entraînement et des poids associés, est la solution la plus appropriée pour permettre à toute entité externe de vérifier la fiabilité et la sécurité des modèles proposés. Bien que cette approche ne soit pas appréciée par la majorité de ces entreprises, certaines d'entre elles, comme Meta et Mistral, investissent considérablement dans les modèles open-weights, en distribuant gratuitement des variantes de leurs modèles LlaMa et Mistral.
+Toutefois, il est essentiel que ces outils ne soient pas uniquement entre les mains de quelques puissants acteurs, capables d'influencer les biais de leurs modèles qu'il distribuent à grande échelle, leur permettant ainsi une influence de masse. La transparence de ces modèles, avec l'ouverture des données d'entraînement et des poids associés, est la solution la plus appropriée pour permettre à toute entité externe de vérifier la fiabilité et la sécurité des modèles proposés. Bien que cette approche ne soit pas appréciée par la majorité de ces entreprises, certaines d'entre elles, comme Meta et Mistral, investissent considérablement dans les modèles open-weights, en distribuant gratuitement des variantes de leurs modèles LlaMa et Mistral.
 
 Grâce à ces efforts, de nombreux groupes, publics et privés, sont désormais en mesure de déployer des modèles puissants, assurant ainsi la souveraineté de leurs données et évitant la concentration de cette richesse et de ce potentiel de pouvoir en un seul point. Mais, quand bien même ces modèles sont disponibles pour tous, il n'est pas aisé de les déployer ni d'estimer les ressources nécessaires pour le faire. Car s'il est simple de servir un modèle à un utilisateur, il est bien plus complexe de le déployer pour des dizaines, centaines voire milliers d'utilisateurs en simultanés. Dans ce contexte, nous avons mené plusieurs tests dans le centre Inria de l'université de Bordeaux concernant le déploiement de tels modèles. 
 
@@ -78,6 +84,96 @@ Ainsi, nous avons testé les modèles suivants :
 * LLaMa-3-70B
 
 ## Resultats
+
+### Codestral 22B GPTQ 8-bit on 2 V100 16 Go
+
+| Request codestral GPTQ 8bits 2V100 \ Size	31	63	119	296	480	822	2193 |  
+|---|---|---|---|---|---|---|---|  
+| 1	| 2,3	| 2,3	| 2,4	| 2,4	| 2,5	| 2,6	| 2,8 |  
+| 2	| 2,3	| 2,3	| 2,4	| 2,5	| 2,6	| 2,7	| 3,3 |  
+1	3,1	3,2	3,2	3,3	3,4	3,7	4,3
+2	3,3	3,4	3,4	3,6	4	4,4	5,8
+4	3,7	3,8	3,9	4,4	4,8	5,6	8,8
+8	4,8	5,1	5,3	6	6,8	8,8	15
+16	7,1	7,5	7,9	9,8	11,7	14,3	27,5
+32	10,4	10,9	11,9	15,3	19	24,6	53,8
+64	15,5	17	18,7	25,9	32,1	43,9	108,2
+128	21,7	np.nan	np.nan	np.nan	np.nan	np.nan	np.nan
+							
+### Codestral 22B on 2 A100 40 Go
+							
+Request codestral 2A100 \ Size	31	63	119	296	480	822	2193
+1	2,3	2,3	2,4	2,4	2,5	2,6	2,8
+2	2,3	2,3	2,4	2,5	2,6	2,7	3,3
+4	2,4	2,4	2,5	2,7	2,8	3,1	4,2
+8	2,5	2,6	2,8	3,1	3,4	4,1	6,3
+16	2,8	2,9	3,2	3,8	4,4	5,6	10,2
+32	3,3	3,7	4	5,2	6,4	8,8	18,1
+64	4,3	4,6	5,7	8	10,5	15,5	36,8
+128	6,8	7,8	9,4	14,5	19,6	32,9	71,1
+
+### Codestral 22B AWQ 4 bits on 1 A100 40 Go
+
+Request codestral AWQ 1A100 \ Size	31	63	119	296	480	822	2193
+1	2,3	2,3	2,4	2,5	2,6	2,6	3
+2	2,3	2,4	2,5	2,7	2,7	2,8	3,5
+4	2,4	2,5	2,6	2,8	3	3,4	4,8
+8	2,6	2,7	2,8	3,2	3,7	4,5	7,4
+16	3	3,2	3,4	4,2	5	6,4	12,3
+32	4,5	4,8	5,4	6,7	8,4	11,4	23,1
+64	7,9	8,5	9,3	12,3	15,8	21,6	47,7
+128	14,3	15,4	17,6	24,2	29,9	46,4	96,2
+							
+### LLaMa-3 70B on 2 A100 40 Go
+
+Request llama370b AWQ 2A100 \ Size	21	51	97	240	398	703	1848
+1	3,6	3,7	3,7	3,9	4	4,2	4,8
+2	3,7	3,7	3,9	4,1	4,2	4,5	5,8
+4	3,8	4	4,1	4,4	4,7	5,4	7,9
+8	4,3	4,5	4,8	5,1	5,9	7,4	12,5
+16	4,9	5,2	5,7	6,9	8,3	10,8	21,4
+32	7,6	8,2	8,7	11,1	13,7	19,6	40,9
+64	12,9	13,9	15,2	20,3	25,8	37,5	np.nan
+128	23,2	np.nan	np.nan	np.nan	np.nan	np.nan	np.nan
+
+### Mistral 7B on 2 V100 16 Go
+
+Request mistral 7B 2V100 \ Size	31	63	119	296	480	822	2193
+1	1,8	1,8	1,9	1,9	1,9	2,1	2,3
+2	2,1	2,1	2	2,2	2,3	2,6	2,8
+4	2,2	2,3	2,1	2,6	2,5	2,8	3,7
+8	2,4	2,4	2,5	2,7	3	3,5	5,9
+16	2,9	2,9	3	3,8	4,2	5,2	9,2
+32	4,2	4,2	4,5	5,4	6,9	8,8	19
+64	6,7	7,1	7,7	9,8	11,9	17,1	36
+128	10,6	10,4	11,5	16,2	24,4	33,3	72,1
+
+### Mixtral 8x7B on 2 A100 40 Go
+
+data_mixtral_8x7b = {
+    1: [3.1, 3.2, 3.6, 3.4, 3.5, 3.5, 4.1],
+    2: [3.3, 3.3, 3.5, 3.5, 3.8, 3.8, 4.7],
+    4: [3.5, 3.6, 3.5, 4.3, 4.1, 4.6, 6.2],
+    8: [3.8, 3.8, 4.0, 4.3, 4.9, 5.7, 9.3],
+    16: [4.3, 4.6, 4.9, 6.0, 6.7, 8.5, 15.5],
+    32: [6.0, 6.4, 7.6, 8.7, 10.9, 14.2, np.nan],
+    64: [10.0, 10.5, 11.6, 15.5, np.nan, np.nan, np.nan],
+    128: [18.5, 19.6, 21.5, np.nan, np.nan, np.nan, np.nan],
+}
+
+### Mixtral 8x22B on 4 A100 40 Go
+
+data_wizard2_8x22b = {
+    1: [6.0, 6.0, 6.3, 6.8, 7.0, 7.6, 10.9],
+    2: [7.2, 7.1, 7.4, 8.4, 8.7, 10.3, 16.7],
+    4: [8.0, 8.1, 8.7, 10.3, 11.9, 14.2, 21.3],
+    8: [9.0, 9.4, 10.0, 13.0, 16.7, 19.4, 36.2],
+    16: [11.0, 12.2, 13.2, 21.1, 26.5, 31.9, 66.4],
+    32: [16.0, 17.6, 22.6, 33.6, 37.7, 56.7, np.nan],
+    64: [28.0, 31.8, 35.9, 56.0, 71.7, np.nan, np.nan],
+    128: [52.0, 55.3, 67.0, 111.7, np.nan, np.nan, np.nan],
+}
+
 - charge mémoire
 - vitesse éxécution, token/s, nb utilisateur simultannée
 - taille max context
