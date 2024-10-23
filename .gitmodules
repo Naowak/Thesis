@@ -64,3 +64,6 @@
 [submodule "code/CrossSituationalLearning"]
 	path = code/CrossSituationalLearning
 	url = git@github.com:Naowak/CrossSituationalLearning.git
+[submodule "code/students"]
+	path = code/students
+	url = git@github.com:Naowak/students.git
