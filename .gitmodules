@@ -67,3 +67,9 @@
 [submodule "code/students"]
 	path = code/students
 	url = git@github.com:Naowak/students.git
+[submodule "code/ReservoirAttentionUnit"]
+	path = code/ReservoirAttentionUnit
+	url = git@github.com:Naowak/ReservoirAttentionUnit.git
+[submodule "code/STREAM-benchmark"]
+	path = code/STREAM-benchmark
+	url = git@github.com:Naowak/STREAM-benchmark.git
