@@ -73,3 +73,18 @@
 [submodule "code/STREAM-benchmark"]
 	path = code/STREAM-benchmark
 	url = git@github.com:Naowak/STREAM-benchmark.git
+[submodule "code/CookoBot"]
+	path = code/CookoBot
+	url = git@github.com:Naowak/CookoBot.git
+[submodule "code/hack1tymio"]
+	path = code/hack1tymio
+	url = git@github.com:Achillegillig/hack1tymio.git
+[submodule "code/ReservoirChat"]
+	path = code/ReservoirChat
+	url = git@github.com:VirgileBoraud/ReservoirChat.git
+[submodule "code/EST-WIP"]
+	path = code/EST-WIP
+	url = git@github.com:Naowak/EST-WIP.git
+[submodule "code/raycast"]
+	path = code/raycast
+	url = https://github.com/Naowak/raycast
