@@ -70,9 +70,6 @@
 [submodule "code/ReservoirAttentionUnit"]
 	path = code/ReservoirAttentionUnit
 	url = git@github.com:Naowak/ReservoirAttentionUnit.git
-[submodule "code/STREAM-benchmark"]
-	path = code/STREAM-benchmark
-	url = git@github.com:Naowak/STREAM-benchmark.git
 [submodule "code/CookoBot"]
 	path = code/CookoBot
 	url = git@github.com:Naowak/CookoBot.git
@@ -88,3 +85,9 @@
 [submodule "code/raycast"]
 	path = code/raycast
 	url = https://github.com/Naowak/raycast
+[submodule "code/Echo-State-Transformer"]
+	path = code/Echo-State-Transformer
+	url = git@github.com:Naowak/Echo-State-Transformer.git
+[submodule "code/STREAM-wip"]
+	path = code/STREAM-wip
+	url = git@github.com:Naowak/STREAM-wip.git
