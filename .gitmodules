@@ -91,3 +91,6 @@
 [submodule "code/STREAM-wip"]
 	path = code/STREAM-wip
 	url = git@github.com:Naowak/STREAM-wip.git
+[submodule "code/STREAM-benchmark"]
+	path = code/STREAM-benchmark
+	url = git@github.com:Naowak/STREAM-benchmark.git
